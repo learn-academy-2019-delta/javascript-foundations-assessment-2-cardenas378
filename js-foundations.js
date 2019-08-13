@@ -36,29 +36,23 @@
 // -------------------------------------------------
 // Consider the variable:
 
-var randomNouns = ["streetlamp", "potato", "teeth", "conclusion", "nephew", "temperature", "database"]
+// var randomNouns = ["streetlamp", "potato", "teeth", "conclusion", "nephew", "temperature", "database"]
 
 // 3a. Write a function that returns every other item as one string. Expected output: "streetlamp teeth nephew database"
 
 
-function everyOther(arr){
-    let newArr = []
-    for (let i = 0; i <arr.length; i +=2 ){
-        newArr.push(arr[i])
-    }
+// function everyOther(arr){
+//     let newArr = []
+//     for (let i = 0; i <arr.length; i +=2 ){
+//         newArr.push(arr[i])
+//     }
     
-            return newArr.join(" ")
-}
-console.log(everyOther(randomNouns))
+//             return newArr.join(" ")
+// }
+// console.log(everyOther(randomNouns))
 
-            // or 
+        
             
-const everyOther = (array) => {
-    let newArr = array.filter(i => i +2)
-        return newArr.join(" ")
-}
-
-console.log(everyOther(randomNouns))
 
 // 3b. Create an arrow function that takes in the variable and returns an array with the number of letters in each string. Expected output: [10, 6, 5, 10, 6, 11, 8]
 
@@ -75,9 +69,9 @@ console.log(everyOther(randomNouns))
 
 // -------------------------------------------------
 // Consider the variables:
-var testString1 = "learn"
-var testString2 = "academy"
-var testString3 = "sandiego"
+// var testString1 = "learn"
+// var testString2 = "academy"
+// var testString3 = "sandiego"
 
 // 4a. Write a function called alphabetSoup that takes one argument and returns a string with all the letters in alphabetical order. Use each of the varibales as test cases. Expected output: "aelnr" "aacdemy" "adeginos"
 
@@ -104,21 +98,21 @@ var animals = ["ducks", "elephants", "pangolins", "zebras", "giraffes", "penguin
 
 // 5a. Write a function that takes the two variables and returns a combined string. Expected output: "9 ducks 1 elephants 8 pangolins 16 zebras 5 giraffes 1 penguins 42 llamas"
 
-// function merge (amounts, animals) {
-//     let a = amounts.filter(Boolean);
-//     let b = animals
-//     let mergedString = " "
+function merge (amounts, animals) {
+    let a = amounts.filter(Boolean);
+    let b = animals
+    let mergedString = " "
     
-//         for (let i = 0; i < a.length || i < b.length; i++){
-//             if(i < a.length)
-//                 mergedString += a[i];
-//             if(i < b.length)
-//                 mergedString += b[i]
-//         }
-//         return mergedString
-// }
+        for (let i = 0; i < a.length || i < b.length; i++){
+            if(i < a.length)
+                mergedString += a[i] + " ";
+            if(i < b.length)
+                mergedString += b[i] + " "
+        }
+        return mergedString
+}
 
-// console.log(merge(amounts,animals))
+console.log(merge(amounts,animals))
 
 
 
